@@ -12,7 +12,37 @@
 <link rel="stylesheet" href="styles.css">
 
 
-<title>Page </title>
+
+
+
+
+<title>A Meaningful Page Title</title>
+
+<meta charset="UTF-8">
+<meta name="description" content="Free Web tutorials">
+<meta name="keywords" content="HTML, CSS, JavaScript">
+<meta name="author" content="John Doe">
+
+<meta http-equiv="refresh" content="30">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<!-- <base href="https://www.w3schools.com/" target="_blank"> -->
+<base  target="_blank">
+
+
+
+
+  <script>
+  function myFunction2() {
+    document.getElementById("demo4").innerHTML = "Hello JavaScript!";
+  }
+  </script>
+
+
+
+
+
 </head>
 
 <body  style="background-color:powderblue;">
@@ -168,11 +198,11 @@ The image will float to the left of the text.</p>
 <map name="workmap">
   <area shape="rect" coords="34,44,270,350" alt="Computer" href="computer.htm">
   <area shape="rect" coords="290,172,333,250" alt="Phone" href="yana.JPG">
-  <area shape="circle" coords="337,300,44" alt="Coffee" onclick="myFunction()" href="">
+  <area shape="circle" coords="337,300,44" alt="Coffee" onclick="myFunction3()" href="">
 </map>
 
 <script>
-function myFunction() {
+function myFunction3() {
   alert("You clicked the coffee cup!");
 }
 </script>
@@ -384,7 +414,7 @@ function myFunction() {
 
 
 <script>
-function myFunction() {
+function myFunction5() {
   var x = document.getElementsByClassName("city");
   for (var i = 0; i < x.length; i++) {
     x[i].style.display = "none";
@@ -392,7 +422,7 @@ function myFunction() {
 }
 </script>
 
-<div ><button onclick="myFunction()" style="  margin:auto;display:block;" >Hide elements</button></div>
+<div ><button onclick="myFunction5()" style="  margin:auto;display:block;" >Hide elements</button></div>
 
 
 
@@ -419,7 +449,55 @@ function displayResult() {
 <iframe width="420" height="345" src="http://bacteridae.myspecies.info" target="_parent"></iframe>
 
 
+<br><br><br><br><br>
+<h1>My First JavaScript</h1>
 
+<button type="button" onclick="document.getElementById('demo').innerHTML = Date()">
+Click me to display Date and Time.</button>
+
+<p id="demo"></p>
+
+
+
+<p id="demo2"></p>
+
+<script>
+document.getElementById("demo2").innerHTML = "Hello JavaScript!";
+document.getElementById("demo2").style.fontSize = "25px";
+document.getElementById("demo2").style.color = "red";
+document.getElementById("demo2").style.backgroundColor = "yellow";
+</script>
+
+
+<img id="img1">
+<script>	
+document.getElementById("img1").src = "marker.png";
+</script>
+
+<noscript>Sorry, your browser does not support JavaScript!</noscript>
+
+
+
+
+<br><br><br>
+<img src="https://www.w3schools.com/images/picture.jpg" alt="Mountain">
+<br>
+<img src="/images/phone.png" alt="Mountain" height="300" width="300">
+<br>
+<img src="images/phone.png" alt="Mountain" height="300" width="300">
+<br>
+<img src="../images/phone.png" alt="Mountain" height="300" width="300">
+
+
+
+
+<p id="demo4">A Paragraph</p>
+<button type="button" onclick="myFunction2()">Try it</button>
+
+
+<br><br>
+<!-- <img src="images/stickman.gif" width="24" height="39" alt="Stickman"> -->
+<!-- <a href="tags/tag_base.asp">HTML base Tag</a> -->
 
 
 </body>
