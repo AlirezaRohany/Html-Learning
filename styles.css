@@ -137,3 +137,103 @@ table {
 .main {
   text-align: center;
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+* {
+  box-sizing:border-box;
+}
+
+.left {
+  background-color:#2196F3;
+  padding:20px;
+  float:left;
+  width:20%; /* The width is 20%, by default */
+}
+
+.main2 {
+  background-color:#f1f1f1;
+  padding:20px;
+  float:left;
+  width:60%; /* The width is 60%, by default */
+}
+
+.right {
+  background-color:#4CAF50;
+  padding:20px;
+  float:left;
+  width:20%; /* The width is 20%, by default */
+}
+
+/* Use a media query to add a break point at 800px: */
+@media screen and (max-width:800px) {
+  .left, .main2, .right {
+    width:100%; /* The width is 100%, when the viewport is 800px or smaller */
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+.menu2 {
+  float:left;
+  width:20%;
+  text-align:center;
+}
+.menu2 a {
+  background-color:#e5e5e5;
+  padding:8px;
+  margin-top:7px;
+  display:block;
+  width:100%;
+  color:black;
+}
+.main3 {
+  float:left;
+  width:60%;
+  padding:0 20px;
+}
+.right2 {
+  background-color:#e5e5e5;
+  float:left;
+  width:20%;
+  padding:15px;
+  margin-top:7px;
+  text-align:center;
+}
+
+@media only screen and (max-width:620px) {
+  /* For mobile phones: */
+  .menu2, .main3, .right2 {
+    width:100%;
+  }
+}
+
+
+
+
+
+
+
+
+
+
